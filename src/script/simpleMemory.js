@@ -70,7 +70,7 @@ if (initCheck()) {
         '    <button class="menu-button" id="open-button">MENU</button>' +
         '    <div class="content-wrap" id="content-wrap"></div><!-- /content-wrap -->' +
         '</div>' +
-        '<div class="main-header">' +
+        '<div class="main-header" style="width:90%">' +
         '    <canvas id="notHomeTopCanvas"></canvas>' +
         '    <div class="vertical">' +
         '        <div class="main-header-content inner">' +
@@ -179,7 +179,8 @@ if (initCheck()) {
         },
         //设置主页上方图片
         homeTopImg: [
-            "https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@master/img/webp/home_top_bg.webp",
+            "http://cache.neokh.website/avatars/home_top_bg.webp",
+            "http://cache.neokh.website/avatars/home_top_bg _2.webp",
 
         ],
         //设置主页标语
@@ -196,7 +197,7 @@ if (initCheck()) {
             fontSize: "14px",
         },
         codeMaxHeight: false,
-        codeLineNumber: false,
+        codeLineNumber: true,
         //文章后缀配置
         essaySuffix: {
             codeImgUrl: '', // >= v1.1.5 左侧图片设置，不配置使用 window.cnblogsConfig.blogAvatar

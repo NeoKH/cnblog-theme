@@ -22,7 +22,7 @@
 
 https://github.com/BNDong/Cnblogs-Theme-SimpleMemory/tree/v1.3.1
 
-因为要修改一些个性化配置，就clone了一份原仓库。基于原主题的1.3.1版本进行修改
+因为要修改一些个性化配置，就clone了一份原仓库。基于1.3.1版本进行修改
 
 修改内容包括：
 
