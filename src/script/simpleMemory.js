@@ -192,24 +192,15 @@ if (initCheck()) {
             "http://cache.neokh.website/avatars/blog_top_bg_2.webp",
             "http://cache.neokh.website/avatars/blog_top_bg_3.webp",
             "http://cache.neokh.website/avatars/blog_top_bg_4.webp",
-            "http://cache.neokh.website/avatars/blog_top_bg_5.webp",
-            "http://cache.neokh.website/avatars/blog_top_bg_6.webp",
-            "http://cache.neokh.website/avatars/blog_top_bg_7.webp",
-            "http://cache.neokh.website/avatars/blog_top_bg_8.webp",
-            "http://cache.neokh.website/avatars/blog_top_bg_9.webp",
-            "http://cache.neokh.website/avatars/blog_top_bg_10.webp",
-            "http://cache.neokh.website/avatars/blog_top_bg_11.webp",
-            "http://cache.neokh.website/avatars/blog_top_bg_12.webp",
-            "http://cache.neokh.website/avatars/blog_top_bg_13.webp",
-            "http://cache.neokh.website/avatars/blog_top_bg_14.webp",
-            "http://cache.neokh.website/avatars/blog_top_bg_15.webp",
-            "http://cache.neokh.website/avatars/blog_top_bg_16.webp",
-            "http://cache.neokh.website/avatars/blog_top_bg_17.webp",
-            "http://cache.neokh.website/avatars/blog_top_bg_18.webp",
-            "http://cache.neokh.website/avatars/blog_top_bg_19.webp",
-            "http://cache.neokh.website/avatars/blog_top_bg_20.webp",
-            "http://cache.neokh.website/avatars/blog_top_bg_21.webp",
-            "http://cache.neokh.website/avatars/blog_top_bg_22.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg5.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg15.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg16.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg17.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg18.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg19.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg20.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg21.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg22.webp",
         ],
         //代码高亮类型
         essayCodeHighlightingType: 'cnblogs',
@@ -403,7 +394,6 @@ function init() {
     tmp = url.split("/");
     var user = tmp[3];
     var navListHtml = 
-        '<div class="m-icon-list" id="sb-sidebarScorerank"></div>' +
         '<li><a href="https://www.cnblogs.com/'+user+'/" target="_self">首页</a></li>' +
         '<li><a href="https://msg.cnblogs.com/send/'+user+'" target="_blank">联系</a></li>' +
         '<li><a href="https://www.cnblogs.com/'+user+'/rss" target="_blank">订阅</a></li>' +
