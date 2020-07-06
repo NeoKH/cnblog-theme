@@ -181,7 +181,7 @@ b {
 
 #home {
     width: 90%;
-    max-width: 1500px;
+    max-width: 90vw;
     background-color: rgba(255, 255, 255, .9);
     padding: 0 20px 30px;
     box-shadow: 0 0 20px 10px rgba(220, 220, 220, .3);
