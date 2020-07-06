@@ -90,9 +90,10 @@ if (initCheck()) {
         '<div id="bottomProgressBar"></div>' +
         '<div id="rightMenu"></div>';
 
+
     window.cnblogsConfigDefault = {
-        GhUserName: 'BNDong',
-        GhRepositories: 'Cnblogs-Theme-SimpleMemory',
+        GhUserName: 'NeoKH',
+        GhRepositories: 'cnblog-theme',
         GhVersions: 'v1.3.0',
         CnVersions: "",
         blogUser: "",
@@ -107,12 +108,14 @@ if (initCheck()) {
         webpageTitleFocusTimeOut: 1000,
         webpageIcon: "",
         fontIconExtend: "",
+        //进度条
         progressBar: {
             id: 'top-progress-bar',
             color: '#77b6ff',
             height: '2px',
             duration: 0.2
         },
+        //
         loading: {
             rebound: {
                 tension: 16,
@@ -134,6 +137,7 @@ if (initCheck()) {
                 renderBase: false
             }
         },
+        //
         homeTopAnimationRendered: true,
         homeTopAnimation: {
             radius: 15,
@@ -173,14 +177,18 @@ if (initCheck()) {
             parallaxAmount: -0.2,
             animateSections: true
         },
+        //设置主页上方图片
         homeTopImg: [
-            "https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@master/img/webp/home_top_bg.webp"
+            "https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@master/img/webp/home_top_bg.webp",
+
         ],
+        //设置主页标语
         homeBannerText: "",
-        homeBannerTextType: "jinrishici",
+        homeBannerTextType: "jinrishici", //可选项："one"
         essayTopImg: [
             "https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@master/img/webp/nothome_top_bg.webp"
         ],
+        //代码高亮类型
         essayCodeHighlightingType: 'cnblogs',
         essayCodeHighlighting: '',
         essayCode: {
@@ -189,27 +197,38 @@ if (initCheck()) {
         },
         codeMaxHeight: false,
         codeLineNumber: false,
+        //文章后缀配置
         essaySuffix: {
-            codeImgUrl: '',
-            aboutHtml: '',
-            copyrightHtml: '',
-            supportHtml: ''
+            codeImgUrl: '', // >= v1.1.5 左侧图片设置，不配置使用 window.cnblogsConfig.blogAvatar
+            aboutHtml: '', // 关于博主，不配置使用默认
+            copyrightHtml: '', // 版权声明，不配置使用默认
+            supportHtml: '' // 声援博主，不配置使用默认
         },
-        bottomBlogroll: [],
+        //友情链接
+        bottomBlogroll: [
+            ["申请坑位", 'https://msg.cnblogs.com/send/BNDong'],
+            ["申请坑位", 'https://msg.cnblogs.com/send/BNDong'],
+            ["申请坑位", 'https://msg.cnblogs.com/send/BNDong'],
+            ["申请坑位", 'https://msg.cnblogs.com/send/BNDong'],
+            ["申请坑位", 'https://msg.cnblogs.com/send/BNDong'],
+        ],
+        //页脚标语
         bottomText: {
             iconFont: {
-                icon:  "icon-xl",
-                color: "red",
-                fontSize: "16px"
+                icon:  "icon-xl", // iconfont 图标名称
+                color: "red", // 图标颜色
+                fontSize: "16px"  // 图标大小
             },
-            left: "",
-            right: "",
+            left: "好好学习",
+            right: "天天向上",
         },
+        //页脚样式
         footerStyle: 2,
         consoleList: [],
         bookList: [],
         themeAuthor: false,
         isVersionMapping: false,
+        //
         switchDayNight: {
             enable: true,
             auto: {
@@ -218,12 +237,14 @@ if (initCheck()) {
                 nightHour: 19
             }
         },
+        //打赏
         reward: {
             enable: false,
             wechatpay: '',
             alipay: ''
         },
-        advertising: true,
+        //是否显示博客园广告
+        advertising: false,
     };
 
     window.cnblogsConfigDefault.hook = {
@@ -308,7 +329,7 @@ function getVersionConfig() {
             }
         });
 
-    } else if(window.cnblogsConfig.GhUserName === 'BNDong') {
+    } else if(window.cnblogsConfig.GhUserName === 'NeoKH') {
         window.themeVersion = [
             [
                 "v1.1.6",
@@ -319,26 +340,7 @@ function getVersionConfig() {
                 "v1.1.8",
                 "461aab69de17a84f0af9ff0c326bfcb94438b06c"
             ]
-            ,
-            [
-                "v1.2.2",
-                "08eab99303d7c463a495adabd8feccc784a8507d"
-            ]
-            ,
-            [
-                "v1.2.3",
-                "36901bf16e2aa3656d4e6f78d44486273b0b8972"
-            ]
-            ,
-            [
-                "v1.2.4",
-                "9354db2147c11fc56cfe02a502f1f8229332fc2f"
-            ]
-            ,
-            [
-                "v1.2.5",
-                "4d744f980758500078df349520472e3b360fb841"
-            ]
+
         ];
         setConfVersion();
     } else {
