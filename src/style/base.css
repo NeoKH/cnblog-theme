@@ -181,7 +181,7 @@ b {
 
 #home {
     width: 90%;
-    max-width: 900px;
+    max-width: 1200px;
     background-color: rgba(255, 255, 255, .9);
     padding: 0 20px 30px;
     box-shadow: 0 0 20px 10px rgba(220, 220, 220, .3);
@@ -3837,7 +3837,7 @@ table#blogCalendar>tbody>tr>td>a {
     }
 
     #home {
-        width: 85%;
+        width: 90%;
         max-width: 100vw
     }
 
