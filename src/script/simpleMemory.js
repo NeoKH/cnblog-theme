@@ -99,7 +99,9 @@ if (initCheck()) {
         blogUser: "",
         blogAvatar: "",
         blogStartDate: "2019-01-01",
-        menuCustomList: {},
+        menuCustomList: {
+
+        },
         menuNavList: [],
         menuUserInfoBgImg: '',
         webpageTitleOnblur: "(oﾟvﾟ)ノ Hi",
@@ -181,13 +183,33 @@ if (initCheck()) {
         homeTopImg: [
             "http://cache.neokh.website/avatars/home_top_bg.webp",
             "http://cache.neokh.website/avatars/home_top_bg _2.webp",
-
         ],
         //设置主页标语
         homeBannerText: "",
-        homeBannerTextType: "jinrishici", //可选项："one"
+        homeBannerTextType: "jinrishici", //可选项："one" "jinrishici"
         essayTopImg: [
-            "https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@master/img/webp/nothome_top_bg.webp"
+            "http://cache.neokh.website/avatars/blog_top_bg_1.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_2.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_3.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_4.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_5.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_6.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_7.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_8.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_9.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_10.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_11.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_12.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_13.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_14.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_15.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_16.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_17.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_18.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_19.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_20.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_21.webp",
+            "http://cache.neokh.website/avatars/blog_top_bg_22.webp",
         ],
         //代码高亮类型
         essayCodeHighlightingType: 'cnblogs',
@@ -207,8 +229,8 @@ if (initCheck()) {
         },
         //友情链接
         bottomBlogroll: [
-            ["申请坑位", 'https://msg.cnblogs.com/send/BNDong'],
-            ["申请坑位", 'https://msg.cnblogs.com/send/BNDong'],
+            ["知乎", 'https://www.zhihu.com/people/kong-hao-45'],
+            ["GitHub", 'https://github.com/neokh'],
             ["申请坑位", 'https://msg.cnblogs.com/send/BNDong'],
             ["申请坑位", 'https://msg.cnblogs.com/send/BNDong'],
             ["申请坑位", 'https://msg.cnblogs.com/send/BNDong'],
@@ -240,9 +262,9 @@ if (initCheck()) {
         },
         //打赏
         reward: {
-            enable: false,
-            wechatpay: '',
-            alipay: ''
+            enable: true,
+            wechatpay: 'wxp://f2f0h2FbiNT0fjJnnXVgeS4uROt2pttJauOy',
+            alipay: 'https://qr.alipay.com/fkx07951pueadphgtsdcyc4'
         },
         //是否显示博客园广告
         advertising: false,
@@ -380,7 +402,9 @@ function init() {
     var url = window.location.href,tmp = [];
     tmp = url.split("/");
     var user = tmp[3];
-    var navListHtml = '<li><a href="https://www.cnblogs.com/'+user+'/" target="_self">首页</a></li>' +
+    var navListHtml = 
+        '<div class="m-list-title"><li><a href="https://www.cnblogs.com/'+user+'/" target="_self">首页</a></li></div>' +
+        '<div class="m-icon-list" id="sb-sidebarSearchBox"></div>' +
         '<li><a href="https://msg.cnblogs.com/send/'+user+'" target="_blank">联系</a></li>' +
         '<li><a href="https://www.cnblogs.com/'+user+'/rss" target="_blank">订阅</a></li>' +
         '<li><a href="https://i.cnblogs.com/" target="_blank">管理</a></li>';
