@@ -403,8 +403,8 @@ function init() {
     tmp = url.split("/");
     var user = tmp[3];
     var navListHtml = 
-        '<div class="m-list-title"><li><a href="https://www.cnblogs.com/'+user+'/" target="_self">首页</a></li></div>' +
-        '<div class="m-icon-list" id="sb-sidebarSearchBox"></div>' +
+        '<div class="m-icon-list" id="sb-sidebarScorerank"></div>' +
+        '<li><a href="https://www.cnblogs.com/'+user+'/" target="_self">首页</a></li>' +
         '<li><a href="https://msg.cnblogs.com/send/'+user+'" target="_blank">联系</a></li>' +
         '<li><a href="https://www.cnblogs.com/'+user+'/rss" target="_blank">订阅</a></li>' +
         '<li><a href="https://i.cnblogs.com/" target="_blank">管理</a></li>';
