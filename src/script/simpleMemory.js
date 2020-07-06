@@ -70,7 +70,7 @@ if (initCheck()) {
         '    <button class="menu-button" id="open-button">MENU</button>' +
         '    <div class="content-wrap" id="content-wrap"></div><!-- /content-wrap -->' +
         '</div>' +
-        '<div class="main-header" style="width:90%">' +
+        '<div class="main-header">' +
         '    <canvas id="notHomeTopCanvas"></canvas>' +
         '    <div class="vertical">' +
         '        <div class="main-header-content inner">' +
